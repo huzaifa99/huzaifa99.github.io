@@ -1,0 +1,119 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+  background: url("../media/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+header{
+background-color: #ffff00
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #ff0000;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+.column1, .column2, .column3 {
+  float: left;
+  padding: 10px;
+}
+
+.column1{
+
+  width: 20%;
+}
+
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 70%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.column2{
+
+  width: 60%;
+}
+
+.imgResponsive {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.videoWrapper{
+  position: relative;
+  padding-bottom: 25%;
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+
+.column3{
+
+  width: 20%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .column1, .column2, .column3{
+    width: 100%
+  }
+}
+a:link, a:visited
